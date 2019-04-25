@@ -66,6 +66,12 @@ Image slideshow is a Swift library providing customizable image slideshow with c
     subspec.source_files = 'ImageSlideshow/Classes/InputSources/ParseSource.swift'
   end
 
+  s.subspec 'UIImageViewAlignedSwift' do |subspec|
+    subspec.dependency 'ImageSlideshow/Core'
+    subspec.dependency 'UIImageViewAlignedSwift'
+    subspec.source_files = 'ImageSlideshow/Classes/InputSources/UIImageViewAligned.swift'
+  end
+
   s.default_subspec = 'Core'
 
 end
