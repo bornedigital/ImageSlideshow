@@ -30,7 +30,7 @@ Image slideshow is a Swift library providing customizable image slideshow with c
   s.swift_versions = ['4.0', '4.1', '4.2', '5']
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.dependency = 'UIImageViewAlignedSwift'
+  s.dependency 'UIImageViewAlignedSwift'
 
   s.subspec 'Core' do |core|
     core.source_files = 'ImageSlideshow/Classes/Core/**/*'
