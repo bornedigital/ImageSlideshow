@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import UIImageViewAlignedSwift
 
 @objcMembers
 open class ZoomAnimatedTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
     /// parent image view used for animated transition
-    open var referenceImageView: UIImageView?
+    open var referenceImageView: UIImageViewAligned?
     /// parent slideshow view used for animated transition
     open weak var referenceSlideshowView: ImageSlideshow?
 
@@ -44,7 +45,7 @@ open class ZoomAnimatedTransitioningDelegate: NSObject, UIViewControllerTransiti
         - parameter imageView: UIImageView instance to animate the transition from
         - parameter slideshowController: FullScreenViewController instance to animate the transition to
      */
-    public init(imageView: UIImageView, slideshowController: FullScreenSlideshowViewController) {
+    public init(imageView: UIImageViewAligned, slideshowController: FullScreenSlideshowViewController) {
         self.referenceImageView = imageView
         self.referenceSlideshowController = slideshowController
 
